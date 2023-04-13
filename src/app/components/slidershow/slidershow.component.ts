@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Result } from 'src/app/interfaces/peliculas-response';
 import Swiper from 'swiper';
-import {register} from 'swiper/element/bundle';
+import { register } from 'swiper/element/bundle';
 
 @Component({
   selector: 'app-slidershow',

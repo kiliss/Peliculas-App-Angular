@@ -8,7 +8,6 @@ import { combineLatest } from 'rxjs';
 @Component({
   selector: 'app-pelicula',
   templateUrl: './pelicula.component.html',
-  styleUrls: ['./pelicula.component.css'],
 })
 export class PeliculaComponent {
   pelicula!: DetailsMovie;
@@ -24,7 +23,6 @@ export class PeliculaComponent {
     this.loading = true;
     let { id } = this.activatedRoute.snapshot.params;
 
-
     combineLatest([
       this.peliculasService.getPeliculaDetalle(id),
       this.peliculasService.getCredits(id),
@@ -36,11 +34,7 @@ export class PeliculaComponent {
       this.pelicula = pelicula;
       this.cast = cast.filter((actor) => actor.profile_path !== null);
       this.loading = false;
-
-      
     });
-
-
 
     // this.peliculasService.getPeliculaDetalle(id).subscribe((resp) => {
     //   if (!resp) {

@@ -12,9 +12,7 @@ export class CastSlideshiwComponent {
   @Input() cast: Cast[] = [];
   constructor() {}
 
-  ngOnInit(): void {
-    console.log(this.cast);
-  }
+  ngOnInit(): void {}
   ngAfterViewInit(): void {
     register();
     const swiper = new Swiper('.swiper', {

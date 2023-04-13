@@ -2,13 +2,13 @@
   <div class="swiper-wrapper">
     <div class="swiper-slide" *ngFor="let c of cast">
       <img
-      src="https://image.tmdb.org/t/p/w500/{{c.profile_path}}"
-      alt=""
-      class="img-fluid"
+        src="https://image.tmdb.org/t/p/w500/{{ c.profile_path }}"
+        alt=""
+        class="img-fluid"
       />
       <div class="movie-description">
-        <h3 class="actor__name">{{c.name}}</h3>
-        <p class="character">Interpretando a {{c.character}}</p>
+        <h3 class="actor__name">{{ c.name }}</h3>
+        <p class="character">Interpretando a {{ c.character }}</p>
       </div>
     </div>
   </div>
@@ -16,4 +16,3 @@
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
 </div>
-

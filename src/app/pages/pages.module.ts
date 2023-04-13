@@ -8,21 +8,15 @@ import { ComponentsModule } from '../components/components.module';
 import { PipesModule } from '../pipes/pipes.module';
 import { StarRatingModule } from 'angular-star-rating';
 
-
-
 @NgModule({
-  declarations: [
-    HomeComponent,
-    PeliculaComponent,
-    BuscarComponent
-  ],
+  declarations: [HomeComponent, PeliculaComponent, BuscarComponent],
   imports: [
     CommonModule,
     HttpClientModule,
     ComponentsModule,
     PipesModule,
-    StarRatingModule.forRoot()
+    StarRatingModule.forRoot(),
   ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class PagesModule { }
+export class PagesModule {}
