@@ -25,3 +25,31 @@
   position: absolute;
   width: 100%;
 }
+
+.swiper-button-prev, .swiper-button-next{
+  color: #ffff;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 50%;
+  padding: 40px;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover{
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-button-prev, .swiper-button-next{
+    background-color: rgba(0,0,0,0.0);
+    opacity: 1;
+    padding: 20px;
+
+  }
+  .movie-description{
+    display: none;
+  }
+  .swiper-pagination{
+    display: none;
+  }
+}
+  
