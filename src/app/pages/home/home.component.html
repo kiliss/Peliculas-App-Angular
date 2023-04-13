@@ -1,1 +1,13 @@
-<p>home works!</p>
+<h1>Cartelera</h1>
+
+<app-loading *ngIf="loading"></app-loading>
+<div class="row" *ngIf="movies.length > 0 && !loading">
+  <div class="col">
+    <app-slidershow [movies]="moviesSlideShow"></app-slidershow>
+  </div>
+</div>
+
+<h2 class="mt-5">Peliculas</h2>
+
+
+<app-peliculas-poster-grid *ngIf="movies.length > 0 && !loading" [movies]="movies"></app-peliculas-poster-grid>

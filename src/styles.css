@@ -1,3 +1,4 @@
+@import '~css-star-rating/css/star-rating.min.css';
 body {
     background-color: #14161E;
 }
@@ -32,4 +33,7 @@ hr{
 
 .block {
     display:block;
+}
+small {
+    font-size: 0.7em;
 }

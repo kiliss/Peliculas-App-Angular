@@ -1,0 +1,17 @@
+<div class="swiper mySwiper animate__animated animate__fadeIn animate__faster">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" *ngFor="let c of cast">
+      <img
+      src="https://image.tmdb.org/t/p/w500/{{c.profile_path}}"
+      alt=""
+      class="img-fluid"
+      />
+      <div class="movie-description">
+        <h3>{{c.name}}</h3>
+        <p>Interpretando a {{c.character}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+

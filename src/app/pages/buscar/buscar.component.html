@@ -1,1 +1,8 @@
-<p>buscar works!</p>
+<h1>Buscando Peliculas: <small class="text-capitalize"> {{texto}} </small></h1>
+<hr>
+<app-loading *ngIf="loading"></app-loading>
+<div class="row">
+  <div class="col" *ngIf="!loading">
+    <app-peliculas-poster-grid [movies]="movies"></app-peliculas-poster-grid>
+  </div>
+</div>
