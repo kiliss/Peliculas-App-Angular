@@ -45,11 +45,15 @@
     padding: 20px;
 
   }
-  .movie-description{
+
+  .character{
     display: none;
   }
   .swiper-pagination{
     display: none;
+  }
+  .actor__name{
+    font-size: 15px;
   }
 }
   
